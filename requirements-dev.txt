@@ -1,2 +1,1 @@
-twine           # pymake pypi
-pypandoc
+twine
