@@ -1,8 +1,17 @@
 #!/usr/bin/env bash
+# File for managing Python packages.
+# by: William Canin, 2019
 
+# Enter the package name
 __progname__="jlogin"
+
+# Enter the shell file name you use (.bashrc or .zshrc)
 __config_shell__=".zshrc" # Usage: .bashrc | .zshrc
 
+if [[ $__progname__ = "" ]] || [[ $__config_shell__ = "" ]]; then
+    printf "Specify the variables: __progname__ and __config_shell__"
+    exit 1
+fi
 
 function _git_commit(){
     if [[ -d ".git" ]]; then
