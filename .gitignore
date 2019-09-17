@@ -1,0 +1,12 @@
+## Folders
+/**/*/__pycache__
+env
+.idea
+venv
+dist
+build
+temp
+jlogin.egg-info
+
+## Files
+/**/*.pyc
